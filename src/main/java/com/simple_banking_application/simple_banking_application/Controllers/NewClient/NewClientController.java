@@ -40,7 +40,7 @@ public class NewClientController implements Initializable {
         TextField textField = new TextField();
 
         String IDno = Id_no_textarea.getText();
-        Integer IDNo = Integer.parseInt(IDno);
+        Integer IDNo = Integer.valueOf(IDno);
         String fname = First_name_textarea.getText();
         String lname = Last_name_textarea.getText();
         String Email_address = Email_address_textarea.getText();
