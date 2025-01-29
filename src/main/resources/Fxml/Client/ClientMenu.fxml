@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="240.0" styleClass="main_menu_container" stylesheets="@../../Styles/ClientMenu.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simple_banking_application.simple_banking_application.Controllers.Client.ClientMenuController">
+   <AnchorPane prefHeight="138.0" prefWidth="240.0" styleClass="logo_container">
+      <ImageView fitHeight="88.0" fitWidth="115.0" layoutX="57.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/WhatsApp%20Image%202024-07-24%20at%2018.01.01.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="32.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logo_container_Text" text="TEVIN FINANCIAL SOLUTIONS" />
+   </AnchorPane>
+   <VBox prefHeight="341.0" prefWidth="240.0" styleClass="button_container">
+      <Button fx:id="dashboard_btn" mnemonicParsing="false" styleClass="button_container_Button" text="Dashboard" />
+      <Button fx:id="Profile_btn" mnemonicParsing="false" styleClass="button_container_Button" text="Profile" />
+      <Button fx:id="transactions_btn" mnemonicParsing="false" styleClass="button_container_Button" text="Transactions" />
+      <Button fx:id="top_up_btn" mnemonicParsing="false" styleClass="button_container_Button" text="Top up" />
+      <Button fx:id="Withdraw_btn" mnemonicParsing="false" styleClass="button_container_Button" text="Withdraw" />
+   </VBox>
+   <VBox prefHeight="133.0" prefWidth="240.0" styleClass="button_container">
+      <Button fx:id="settings_btn" mnemonicParsing="false" styleClass="button_container_Button" text="Settings" />
+      <Button fx:id="log_out_btn" mnemonicParsing="false" styleClass="button_container_Button" text="Log out" />
+   </VBox>
+</VBox>

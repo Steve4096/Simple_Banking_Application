@@ -1,0 +1,6 @@
+.error{
+    -fx-font-family: "Agency FB";
+    -fx-text-fill: #ff0000;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+}

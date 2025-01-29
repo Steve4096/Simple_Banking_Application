@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simple_banking_application.simple_banking_application.Controllers.Client.WithdrawController">
+   <Label text="Withdraw" />
+   <Label text="Withdrawal details" />
+   <AnchorPane prefHeight="262.0" prefWidth="338.0">
+      <Label layoutX="14.0" layoutY="14.0" text="Account Number to withdraw from:" />
+      <Label fx:id="Acc_no_lbl" layoutX="14.0" layoutY="45.0" />
+      <Label layoutX="13.0" layoutY="153.0" text="Enter amount to withdraw:" />
+      <TextField fx:id="Withdrawal_amount_txtfield" layoutX="9.0" layoutY="188.0" promptText="Enter amount to withdraw" />
+      <Label layoutX="14.0" layoutY="89.0" text="Current balance:" />
+      <Label fx:id="Balance_lbl" layoutX="14.0" layoutY="114.0" />
+      <Label fx:id="Minimum_withdrawal_amount_lbl" layoutX="57.0" layoutY="231.0" />
+      <Label fx:id="Withdrawalamount_isGreaterthan_Balance_lbl" layoutX="43.0" layoutY="231.0" />
+   </AnchorPane>
+   <Button fx:id="Withdraw_btn" mnemonicParsing="false" text=" Continue" />
+   <Button fx:id="Cancel_btn" mnemonicParsing="false" text="Cancel" />
+</VBox>

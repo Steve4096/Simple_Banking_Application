@@ -1,0 +1,44 @@
+.login_container{
+    -fx-background-color:white;
+}
+
+.login_logo_container{
+-fx-background-color: blue;
+-fx-alignment:center;
+}
+
+.login_logo_container_Text{
+-fx-fill:black;
+-fx-font-size:2em;
+}
+
+#choice_box_prompt_text{
+    -fx-font-weight: bold;
+}
+
+#choice_box_popup_menu{
+    -fx-background-color: aqua;
+}
+
+.account_selector{
+    -fx-background-color: beige;
+}
+
+.login_form_container{
+    -fx-alignment: top-left;
+    -fx-spacing: 15;
+}
+
+.login_form_container_Button{
+    -fx-background-color: black;
+-fx-text-fill: white;
+}
+
+.login_form_container_Button:hover{
+    -fx-cursor: hand;
+}
+
+.login_container_Button{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}

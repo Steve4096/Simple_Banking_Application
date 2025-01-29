@@ -1,0 +1,68 @@
+.dashboard{
+    -fx-background-color: white;
+}
+
+.user_name{
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 3em;
+}
+
+.dashboard_text{
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 2em;
+    -fx-text-fill: black;
+
+}
+
+.accounts{
+    -fx-background-color: blue;
+    -fx-background-radius: 20;
+    -fx-alignment:center;
+    -fx-effect: dropshadow(three-pass-box ,#AAAAAA, 5,0,0,4);
+}
+
+.accounts_balance{
+    -fx-text-fill: white;
+    -fx-font-size: 2em;
+}
+.accounts_text{
+    -fx-text-fill: white;
+    -fx-font-family: "Agency FB";
+
+}
+
+.accounts_image{
+    -fx-background-radius: 20;
+    -fx-background-color: black;
+}
+
+.accounts_summary_container{
+    -fx-alignment: top_left;
+    -fx-spacing: 10;
+    -fx-padding: 10;
+    -fx-background-color:beige;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box ,#AAAAAA, 5,0,0,4);
+}
+.accounts_summary_container_lines{
+    -fx-stroke-type: inside;
+    -fx-stroke: black;
+}
+
+.transaction_container{
+    -fx-background-radius: 20;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box ,#AAAAAA, 5,0,0,4);
+
+}
+
+.hbox{
+    -fx-border-color: black;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+.hbox_text{
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Bernard MT Condensed";
+}

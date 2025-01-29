@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="576.0" prefWidth="693.0" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simple_banking_application.simple_banking_application.Controllers.Client.DashboardController">
+   <Text layoutX="31.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="dashboard_text" text="My account">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <Text layoutX="457.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="dashboard_text" text="Accounts Summary">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <AnchorPane layoutX="14.0" layoutY="81.0" prefHeight="176.0" prefWidth="313.0" styleClass="accounts">
+      <ImageView fitHeight="58.0" fitWidth="91.0" layoutX="232.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="accounts_image">
+         <image>
+            <Image url="@../../Images/WhatsApp%20Image%202024-07-24%20at%2018.01.01.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="190.0" layoutY="80.0" styleClass="accounts_text" text="TEVIN FINANCIAL SOLUTIONS" />
+      <Label layoutX="8.0" layoutY="100.0" styleClass="accounts_text" />
+      <Label layoutX="15.0" layoutY="117.0" styleClass="accounts_text" text="Card holder name" />
+      <Label fx:id="card_holder_name_lbl" layoutX="15.0" layoutY="134.0" prefHeight="17.0" prefWidth="95.0" styleClass="accounts_text" />
+      <Label layoutX="215.0" layoutY="117.0" styleClass="accounts_text" text="Valid till" />
+      <Label fx:id="validity_lbl" layoutX="222.0" layoutY="134.0" styleClass="accounts_text" text="9/28" />
+      <Label fx:id="acc_balance" layoutX="69.0" layoutY="25.0" styleClass="accounts_balance" text="1,345,786.98" />
+      <Label fx:id="acc_no" layoutX="69.0" layoutY="99.0" styleClass="accounts_text" />
+      <Label layoutX="8.0" layoutY="25.0" styleClass="accounts_balance" text="KSHS." />
+   </AnchorPane>
+   <Text layoutX="37.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="dashboard_text" text="Latest Transactions">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <VBox layoutX="451.0" layoutY="78.0" prefHeight="419.0" prefWidth="228.0" styleClass="accounts_summary_container">
+      <children>
+         <Label text="Sent" />
+         <Label fx:id="acc_summ_sent" text="340,456.00" />
+         <Line endX="78.95951843261719" endY="5.861123554495862E-6" styleClass="accounts_summary_container_lines" />
+         <Label text="Received" />
+         <Label fx:id="acc_received_summ" text="701,939.78" />
+         <Line endX="-7.7071075439453125" endY="0.5206485390663147" startX="-100.0" styleClass="accounts_summary_container_lines" />
+         <Label text="Bills" />
+         <Label fx:id="acc_summ_bills" text="100,975.00" />
+      </children>
+   </VBox>
+   <ListView fx:id="transactions_listview" layoutX="14.0" layoutY="302.0" prefHeight="192.0" prefWidth="383.0" styleClass="transaction_container" />
+   <Label fx:id="date_lbl" layoutX="579.0" layoutY="11.0" styleClass="dashboard_text" text="Date">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <HBox layoutY="551.0" prefHeight="35.0" prefWidth="693.0" styleClass="hbox">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="hbox_text" text="All rights reserved @2024" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="hbox_text" text="Powered by Tevin softwares" />
+   </HBox>
+   <Label layoutX="46.0" layoutY="17.0" styleClass="dashboard_text" text="Hello," />
+   <Label fx:id="username_lbl" layoutX="88.0" layoutY="17.0" styleClass="dashboard_text" />
+</AnchorPane>

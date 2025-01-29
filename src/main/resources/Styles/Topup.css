@@ -1,0 +1,31 @@
+.top_up_container{
+    -fx-background-color: white;
+    -fx-spacing: 10;
+    -fx-alignment:top left;
+}
+
+.top_up_container_text{
+    -fx-font-size: 2em;
+
+}
+
+.text{
+    -fx-font-size: 1.5em;
+}
+
+.account_details{
+    -fx-alignment: top_left;
+    -fx-background-radius: 10;
+    -fx-effect:dropshadow(three-pass-box,#AAAAAA,5,0,0,4);
+    -fx-spacing: 10;
+}
+
+.text-area{
+    -fx-background-radius: 10;
+
+}
+
+.button{
+-fx-background-color: blue;
+    -fx-text-fill: black;
+}
